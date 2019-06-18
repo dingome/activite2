@@ -1,0 +1,37 @@
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+  <modelVersion>4.0.0</modelVersion>
+  <groupId>fr.upicardie.compilation</groupId>
+  <artifactId>CompilationAssisteMaven</artifactId>
+  <version>0.0.1-SNAPSHOT</version>
+  <name>Compilation assistée avec Maven</name>
+  <description>Activite 2 exercice 2</description>
+  
+
+	
+	<!-- Celle-ci indique que le projet a besoin de JUnit. -->
+	<dependencies>
+	    <dependency>
+	      <groupId>junit</groupId>
+	      <artifactId>junit</artifactId>
+	      <version>4.12</version>
+	      <scope>test</scope>
+        </dependency>
+      </dependencies>
+      
+      <build>
+		  <finalName>CompilationAssisteMaven</finalName>
+		  <plugins>
+		     <plugin>
+		        <groupId>org.apache.maven.plugins</groupId>
+		        <artifactId>maven-compiler-plugin</artifactId>
+		        <configuration>
+		          <source>1.5</source>
+		          <target>1.5</target>
+		        </configuration>
+		      </plugin>
+		  </plugins>
+		</build>
+    
+    
+	
+</project>
